@@ -17,6 +17,7 @@ module.exports = {
             'darken-gold': '#AA823C',
             'medium-white': '#FBFBFB',
             'light-gray': '#F2F2F2',
+            'light-gold': '#CA9D42',
             'cream': '#F4EBD9',
         }
     },

@@ -16,6 +16,7 @@ module.exports = {
             'darken-blue': '#0B1F2A',
             'darken-gold': '#AA823C',
             'medium-white': '#FBFBFB',
+            'light-gray': '#F2F2F2',
             'cream': '#F4EBD9',
         }
     },

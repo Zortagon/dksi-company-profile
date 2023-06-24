@@ -18,6 +18,7 @@ module.exports = {
             'medium-white': '#FBFBFB',
             'light-gray': '#F2F2F2',
             'light-gold': '#CA9D42',
+            'white': '#FFFFFF',
             'cream': '#F4EBD9',
         }
     },

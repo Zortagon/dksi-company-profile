@@ -3,6 +3,9 @@ module.exports = {
     content: ["./public/**/*.{html,js}"],
     theme: {
         extend: {},
+        fontFamily: {
+            'roboto': ['Roboto Mono', 'ui-monospace']
+        },
         container: {
             center: true,
             padding: {

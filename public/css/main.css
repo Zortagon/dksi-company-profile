@@ -1125,6 +1125,10 @@ html {
     right: 1px;
   }
 
+  .md\:right-0 {
+    right: 0px;
+  }
+
   .md\:flex {
     display: flex;
   }

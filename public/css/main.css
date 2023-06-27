@@ -633,6 +633,10 @@ html {
   width: 100%;
 }
 
+.w-24 {
+  width: 6rem;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -663,6 +667,10 @@ html {
 
 .max-w-xs {
   max-width: 20rem;
+}
+
+.max-w-\[25rem\] {
+  max-width: 25rem;
 }
 
 .grid-cols-1 {
@@ -1027,6 +1035,14 @@ html {
 
   .sm\:block {
     display: block;
+  }
+
+  .sm\:w-16 {
+    width: 4rem;
+  }
+
+  .sm\:max-w-\[15rem\] {
+    max-width: 15rem;
   }
 
   .sm\:grid-cols-2 {

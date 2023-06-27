@@ -649,6 +649,10 @@ html {
   max-width: 36rem;
 }
 
+.max-w-md {
+  max-width: 28rem;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -723,6 +727,22 @@ html {
 
 .gap-y-24 {
   row-gap: 6rem;
+}
+
+.gap-y-16 {
+  row-gap: 4rem;
+}
+
+.gap-y-1 {
+  row-gap: 0.25rem;
+}
+
+.gap-y-14 {
+  row-gap: 3.5rem;
+}
+
+.gap-y-12 {
+  row-gap: 3rem;
 }
 
 .place-self-center {
@@ -828,6 +848,11 @@ html {
 .py-3\.5 {
   padding-top: 0.875rem;
   padding-bottom: 0.875rem;
+}
+
+.px-14 {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
 }
 
 .pb-8 {
@@ -1005,6 +1030,10 @@ html {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .sm\:gap-y-24 {
+    row-gap: 6rem;
+  }
+
   .sm\:p-16 {
     padding: 4rem;
   }
@@ -1016,6 +1045,11 @@ html {
   .sm\:py-32 {
     padding-top: 8rem;
     padding-bottom: 8rem;
+  }
+
+  .sm\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .sm\:pb-16 {
@@ -1088,6 +1122,14 @@ html {
 
   .lg\:col-start-4 {
     grid-column-start: 4;
+  }
+
+  .lg\:max-w-2xl {
+    max-width: 42rem;
+  }
+
+  .lg\:max-w-xl {
+    max-width: 36rem;
   }
 
   .lg\:grid-cols-4 {

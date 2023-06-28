@@ -567,27 +567,6 @@ html {
   margin-right: auto;
 }
 
-.mx-24 {
-  margin-left: 6rem;
-  margin-right: 6rem;
-}
-
-.mr-5 {
-  margin-right: 1.25rem;
-}
-
-.ml-5 {
-  margin-left: 1.25rem;
-}
-
-.ml-12 {
-  margin-left: 3rem;
-}
-
-.ml-24 {
-  margin-left: 6rem;
-}
-
 .flex {
   display: flex;
 }
@@ -654,10 +633,6 @@ html {
   max-width: 80rem;
 }
 
-.max-w-\[25rem\] {
-  max-width: 25rem;
-}
-
 .max-w-\[6rem\] {
   max-width: 6rem;
 }
@@ -666,12 +641,12 @@ html {
   max-width: 100%;
 }
 
-.max-w-xl {
-  max-width: 36rem;
-}
-
 .max-w-md {
   max-width: 28rem;
+}
+
+.max-w-xl {
+  max-width: 36rem;
 }
 
 .grid-cols-1 {
@@ -746,29 +721,13 @@ html {
   gap: 2rem;
 }
 
-.gap-y-24 {
-  row-gap: 6rem;
-}
-
-.gap-y-16 {
-  row-gap: 4rem;
-}
-
-.gap-y-1 {
-  row-gap: 0.25rem;
-}
-
-.gap-y-14 {
-  row-gap: 3.5rem;
+.gap-x-12 {
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
 }
 
 .gap-y-12 {
   row-gap: 3rem;
-}
-
-.gap-x-12 {
-  -moz-column-gap: 3rem;
-       column-gap: 3rem;
 }
 
 .place-self-center {
@@ -851,6 +810,11 @@ html {
   padding: 1.5rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -876,24 +840,9 @@ html {
   padding-bottom: 0.875rem;
 }
 
-.px-14 {
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
-}
-
-.px-24 {
-  padding-left: 6rem;
-  padding-right: 6rem;
-}
-
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-8 {
@@ -1083,24 +1032,24 @@ html {
     padding: 2rem;
   }
 
-  .sm\:py-32 {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  }
-
   .sm\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
   }
 
-  .sm\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
   .sm\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .sm\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .sm\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .sm\:pb-16 {
@@ -1121,12 +1070,12 @@ html {
     left: 0px;
   }
 
-  .md\:right-px {
-    right: 1px;
-  }
-
   .md\:right-0 {
     right: 0px;
+  }
+
+  .md\:right-px {
+    right: 1px;
   }
 
   .md\:flex {

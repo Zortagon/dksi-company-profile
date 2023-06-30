@@ -645,6 +645,10 @@ html {
   height: 100%;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .w-0 {
   width: 0px;
 }
@@ -808,6 +812,14 @@ html {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-0 {
+  gap: 0px;
+}
+
+.gap-0\.5 {
+  gap: 0.125rem;
 }
 
 .gap-x-12 {
@@ -985,6 +997,11 @@ html {
   padding-right: 0px;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .pb-8 {
   padding-bottom: 2rem;
 }
@@ -1038,6 +1055,11 @@ html {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold {

@@ -538,6 +538,10 @@ html {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .-bottom-1\/4 {
   bottom: -25%;
 }
@@ -558,8 +562,16 @@ html {
   top: -25%;
 }
 
+.top-0 {
+  top: 0px;
+}
+
 .z-10 {
   z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .mx-auto {
@@ -581,14 +593,6 @@ html {
 
 .hidden {
   display: none;
-}
-
-.aspect-square {
-  aspect-ratio: 1 / 1;
-}
-
-.aspect-auto {
-  aspect-ratio: auto;
 }
 
 .h-1\/2 {
@@ -633,14 +637,6 @@ html {
   width: 100%;
 }
 
-.w-3 {
-  width: 0.75rem;
-}
-
-.w-24 {
-  width: 6rem;
-}
-
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -669,20 +665,8 @@ html {
   max-width: 36rem;
 }
 
-.max-w-6xl {
-  max-width: 72rem;
-}
-
-.max-w-sm {
-  max-width: 24rem;
-}
-
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .grid-cols-2 {
@@ -701,24 +685,8 @@ html {
   flex-direction: column;
 }
 
-.place-content-center {
-  place-content: center;
-}
-
 .place-content-end {
   place-content: end;
-}
-
-.place-content-between {
-  place-content: space-between;
-}
-
-.items-start {
-  align-items: flex-start;
-}
-
-.items-end {
-  align-items: flex-end;
 }
 
 .items-center {
@@ -731,6 +699,18 @@ html {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-1\.5 {
+  gap: 0.375rem;
 }
 
 .gap-12 {
@@ -773,14 +753,6 @@ html {
   gap: 2rem;
 }
 
-.gap-1 {
-  gap: 0.25rem;
-}
-
-.gap-1\.5 {
-  gap: 0.375rem;
-}
-
 .gap-x-12 {
   -moz-column-gap: 3rem;
        column-gap: 3rem;
@@ -788,6 +760,27 @@ html {
 
 .gap-y-12 {
   row-gap: 3rem;
+}
+
+.divide-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
+}
+
+.divide-y > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+
+.divide-medium-white > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(251 251 251 / var(--tw-divide-opacity));
+}
+
+.divide-opacity-25 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 0.25;
 }
 
 .place-self-center {
@@ -820,6 +813,20 @@ html {
 
 .rounded-md {
   border-radius: 0.375rem;
+}
+
+.border-8 {
+  border-width: 8px;
+}
+
+.border-b-darken-blue {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(11 31 42 / var(--tw-border-opacity));
+}
+
+.border-t-darken-gold {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(170 130 60 / var(--tw-border-opacity));
 }
 
 .bg-cream {
@@ -904,11 +911,6 @@ html {
   padding-bottom: 0.875rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .pb-8 {
   padding-bottom: 2rem;
 }
@@ -987,6 +989,10 @@ html {
   line-height: 1.25;
 }
 
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
 .tracking-wider {
   letter-spacing: 0.05em;
 }
@@ -1011,6 +1017,11 @@ html {
   color: rgb(251 251 251 / var(--tw-text-opacity));
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .opacity-10 {
   opacity: 0.1;
 }
@@ -1031,12 +1042,10 @@ html {
   opacity: 0.8;
 }
 
-.opacity-50 {
-  opacity: 0.5;
-}
-
-.opacity-25 {
-  opacity: 0.25;
+.shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .drop-shadow-\[0_0_15px_rgba\(0\2c 0\2c 0\2c 0\.075\)\] {
@@ -1119,11 +1128,6 @@ html {
     padding-bottom: 8rem;
   }
 
-  .sm\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
   .sm\:pb-16 {
     padding-bottom: 4rem;
   }
@@ -1168,14 +1172,6 @@ html {
 
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-8 {
-    grid-template-columns: repeat(8, minmax(0, 1fr));
-  }
-
-  .md\:items-center {
-    align-items: center;
   }
 
   .md\:justify-start {

@@ -22,46 +22,49 @@
         href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
-    <header class="hidden py-2 bg-darken-blue sm:block">
-        <div class="flex justify-center px-5 mx-auto text-sm max-w-7xl text-medium-white">
-            <a href="#" class="group">
-                <span class="transition opacity-80 group-hover:opacity-100">We're also available on various other
-                    platforms. More Information <i class="ri-arrow-right-line"></i></span>
-            </a>
+    <header class="sticky top-0 z-20 shadow-sm border-12 border-b-darken-blue">
+        <div class="hidden py-2 bg-darken-blue sm:block">
+            <div class="flex justify-center px-5 mx-auto text-sm max-w-7xl text-medium-white">
+                <a href="#" class="group">
+                    <span class="transition opacity-80 group-hover:opacity-100">We're also available on various other
+                        platforms. More Information <i class="ri-arrow-right-line"></i></span>
+                </a>
+            </div>
         </div>
+        <nav class="bg-white">
+            <div class="flex justify-between px-5 py-3.5 mx-auto max-w-7xl">
+                <div class="flex flex-row items-center gap-4">
+                    <img src="img/element/crown.svg" alt="Crown" class="w-10">
+                    <img src="img/nav/text.svg" alt="DKSI" class="w-14">
+                </div>
+                <ul
+                    class="items-center hidden gap-5 text-sm font-semibold tracking-wider uppercase md:flex text-darken-blue">
+                    <li class="p-2.5 transition-colors hover:bg-light-gray rounded-md">
+                        <a href="#services">Services</a>
+                    </li>
+                    <li class="p-2.5 transition-colors hover:bg-light-gray rounded-md">
+                        <a href="#">Products</a>
+                    </li>
+                    <li class="p-2.5 transition-colors hover:bg-light-gray rounded-md">
+                        <a href="#">Company</a>
+                    </li>
+                    <li class="p-2.5 bg-cream text-darken-gold rounded-md">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+                <div
+                    class="flex items-center gap-5 text-sm font-semibold tracking-wider uppercase md:hidden text-darken-blue">
+                    <a href="#" class="p-2.5 bg-cream text-darken-gold rounded-md hidden sm:block">Contact</a>
+                    <div class="w-0.5 h-1/2 bg-darken-blue bg-opacity-10 hidden sm:block rounded-lg"></div>
+                    <i class="text-3xl font-extralight ri-menu-5-line"></i>
+                </div>
+            </div>
+        </nav>
     </header>
-    <nav>
-        <div class="flex justify-between px-5 py-3.5 mx-auto max-w-7xl">
-            <div class="flex flex-row items-center gap-4">
-                <img src="img/element/crown.svg" alt="Crown" class="w-10">
-                <img src="img/nav/text.svg" alt="DKSI" class="w-14">
-            </div>
-            <ul
-                class="items-center hidden gap-5 text-sm font-semibold tracking-wider uppercase md:flex text-darken-blue">
-                <li class="p-2.5 transition-colors hover:bg-light-gray rounded-md">
-                    <a href="#">Services</a>
-                </li>
-                <li class="p-2.5 transition-colors hover:bg-light-gray rounded-md">
-                    <a href="#">Products</a>
-                </li>
-                <li class="p-2.5 transition-colors hover:bg-light-gray rounded-md">
-                    <a href="#">Company</a>
-                </li>
-                <li class="p-2.5 bg-cream text-darken-gold rounded-md">
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-            <div
-                class="flex items-center gap-5 text-sm font-semibold tracking-wider uppercase md:hidden text-darken-blue">
-                <a href="#" class="p-2.5 bg-cream text-darken-gold rounded-md hidden sm:block">Contact</a>
-                <div class="w-0.5 h-1/2 bg-darken-blue bg-opacity-10 hidden sm:block rounded-lg"></div>
-                <i class="text-3xl font-extralight ri-menu-5-line"></i>
-            </div>
-        </div>
-    </nav>
     <main>
         <!-- Section: Hero -->
         <section class="py-16 overflow-hidden rounded-3xl bg-medium-white">
@@ -156,7 +159,7 @@
         <!-- End: About -->
 
         <!-- Section: Services -->
-        <section class="overflow-hidden bg-medium-white">
+        <section class="overflow-hidden bg-medium-white" id="services">
             <div class="relative px-5 py-16 mx-auto max-w-7xl sm:py-32">
                 <img src="img/element/gear.svg" alt="Gear"
                     class="absolute invisible max-w-md lg:max-w-xl -bottom-1/4 -left-52 sm:visible">
@@ -164,7 +167,8 @@
                     class="absolute invisible max-w-xl lg:max-w-2xl -top-1/4 -right-52 sm:visible">
                 <div class="flex flex-col gap-12">
                     <div class="flex flex-col max-w-2xl gap-4 px-5 mx-auto text-center">
-                        <h1 class="text-4xl font-semibold text-darken-blue">Services that <span class="font-bold text-light-gold">we provide</span></h1>
+                        <h1 class="text-4xl font-semibold text-darken-blue">Services that <span
+                                class="font-bold text-light-gold">we provide</span></h1>
                         <div class="flex flex-col gap-3.5 opacity-75">
                             <h2 class="text-xl font-medium">Discover the range of exceptional services we offer.</h2>
                             <p class="leading-loose"> From strategic consulting to cutting-edge solutions, we are
@@ -262,7 +266,101 @@
             </div>
         </section>
         <!-- End: Overview -->
+
+        <section>
+
+        </section>
     </main>
+    <footer class="divide-y divide-medium-white divide-opacity-25">
+        <!-- Footer: Top -->
+        <div class="bg-darken-blue">
+            <div class="px-5 mx-auto max-w-7xl ">
+                <h1>Atas</h1>
+            </div>
+        </div>
+        
+        <!-- Footer: Bottom -->
+        <div class="bg-darken-blue">
+            <div class="px-5 mx-auto max-w-7xl">
+                <div class="grid grid-cols-2">
+                    <div>
+                        <img src="img/element/crown.svg" alt="Crown" class="w-10">
+                        <img src="img/nav/text.svg" alt="DKSI" class="w-14">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <footer class="bg-darken-blue">
+        <div class="px-5 mx-auto max-w-7xl">
+            <div class="flex flex-col text-white">
+                <div class="grid grid-cols-2">
+                    <ul class="flex justify-around w-full">
+                        <li class="flex flex-col gap-3.5">
+                            <h3 class="font-semibold tracking-wide text-medium-white">Marketplace</h3>
+                            <ul class="flex flex-col gap-2 text-sm">
+                                <li>
+                                    <a href="#">Marketplace</a>
+                                </li>
+                                <li>
+                                    <a href="#">Marketplace</a>
+                                </li>
+                                <li>
+                                    <a href="#">Marketplace</a>
+                                </li>
+                                <li>
+                                    <a href="#">Marketplace</a>
+                                </li>
+                                <li>
+                                    <a href="#">Marketplace</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="flex flex-col gap-3.5">
+                            <h3 class="font-semibold tracking-wide text-medium-white">Services</h3>
+                            <ul class="flex flex-col gap-2 text-sm">
+                                <li>
+                                    <a href="#">Marketplace</a>
+                                </li>
+                                <li>
+                                    <a href="#">Marketplace</a>
+                                </li>
+                                <li>
+                                    <a href="#">Marketplace</a>
+                                </li>
+                                <li>
+                                    <a href="#">Marketplace</a>
+                                </li>
+                                <li>
+                                    <a href="#">Marketplace</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="flex flex-col gap-3.5">
+                            <h3 class="font-semibold tracking-wide text-medium-white">Company</h3>
+                            <ul class="flex flex-col gap-2 text-sm">
+                                <li>
+                                    <a href="#">Marketplace</a>
+                                </li>
+                                <li>
+                                    <a href="#">Marketplace</a>
+                                </li>
+                                <li>
+                                    <a href="#">Marketplace</a>
+                                </li>
+                                <li>
+                                    <a href="#">Marketplace</a>
+                                </li>
+                                <li>
+                                    <a href="#">Marketplace</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer> -->
 </body>
 
 </html>

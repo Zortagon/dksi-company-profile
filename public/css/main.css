@@ -620,6 +620,10 @@ html {
   width: 2.5rem;
 }
 
+.w-12 {
+  width: 3rem;
+}
+
 .w-14 {
   width: 3.5rem;
 }
@@ -663,6 +667,10 @@ html {
 
 .max-w-xl {
   max-width: 36rem;
+}
+
+.auto-cols-max {
+  grid-auto-columns: max-content;
 }
 
 .grid-cols-1 {
@@ -762,10 +770,8 @@ html {
   row-gap: 3rem;
 }
 
-.divide-y-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-y-reverse: 0;
-  border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
-  border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
+.gap-y-5 {
+  row-gap: 1.25rem;
 }
 
 .divide-y > :not([hidden]) ~ :not([hidden]) {
@@ -789,6 +795,10 @@ html {
 
 .self-center {
   align-self: center;
+}
+
+.justify-self-end {
+  justify-self: end;
 }
 
 .overflow-hidden {
@@ -815,18 +825,9 @@ html {
   border-radius: 0.375rem;
 }
 
-.border-8 {
-  border-width: 8px;
-}
-
 .border-b-darken-blue {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(11 31 42 / var(--tw-border-opacity));
-}
-
-.border-t-darken-gold {
-  --tw-border-opacity: 1;
-  border-top-color: rgb(170 130 60 / var(--tw-border-opacity));
 }
 
 .bg-cream {
@@ -911,6 +912,11 @@ html {
   padding-bottom: 0.875rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-8 {
   padding-bottom: 2rem;
 }
@@ -925,6 +931,11 @@ html {
 
 .font-roboto {
   font-family: Roboto Mono, ui-monospace;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-3xl {
@@ -1032,6 +1043,10 @@ html {
 
 .opacity-5 {
   opacity: 0.05;
+}
+
+.opacity-50 {
+  opacity: 0.5;
 }
 
 .opacity-75 {
@@ -1172,6 +1187,10 @@ html {
 
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 
   .md\:justify-start {

@@ -1,12 +1,7 @@
-@keyframes scroll {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(calc(-100% - 1rem));
-    }
+* {
+    --swiper-pagination-color: #0B1F2A;
 }
 
-.scroll {
-    animation: scroll 10s linear infinite;
+.swiper {
+    width: 100%;
 }

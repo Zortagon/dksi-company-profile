@@ -7,7 +7,7 @@ var swiper = new Swiper(".swiper-partners", {
     },
     autoplay: {
         delay: 2500,
-        disableOnInteraction: true,
+        disableOnInteraction: false,
         pauseOnMouseEnter: true
     },
     breakpoints: {

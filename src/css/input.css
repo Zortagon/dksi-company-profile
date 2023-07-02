@@ -9,8 +9,11 @@
 }
 
 @layer components {
+    .container-partner-logo {
+        @apply aspect-square flex items-center transition opacity-50 hover:opacity-100 grayscale hover:grayscale-0;
+    }
     .partner-logo {
-        @apply w-32 transition opacity-50 hover:opacity-100 grayscale hover:grayscale-0;
+        @apply w-32;
     }
     .partner-logo-square {
         @apply w-28 p-5 transition opacity-50 hover:opacity-100 grayscale hover:grayscale-0;

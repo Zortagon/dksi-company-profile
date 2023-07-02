@@ -526,8 +526,10 @@ html {
   --tw-backdrop-sepia:  ;
 }
 
-.partner-logo {
-  width: 8rem;
+.container-partner-logo {
+  display: flex;
+  aspect-ratio: 1 / 1;
+  align-items: center;
   opacity: 0.5;
   --tw-grayscale: grayscale(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -538,10 +540,14 @@ html {
   transition-duration: 150ms;
 }
 
-.partner-logo:hover {
+.container-partner-logo:hover {
   opacity: 1;
   --tw-grayscale: grayscale(0);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.partner-logo {
+  width: 8rem;
 }
 
 .partner-logo-square {
@@ -648,10 +654,6 @@ html {
   margin-top: 0px;
 }
 
-.mt-12 {
-  margin-top: 3rem;
-}
-
 .mt-14 {
   margin-top: 3.5rem;
 }
@@ -731,14 +733,6 @@ html {
 
 .w-20 {
   width: 5rem;
-}
-
-.w-28 {
-  width: 7rem;
-}
-
-.w-32 {
-  width: 8rem;
 }
 
 .w-fit {
@@ -1035,10 +1029,6 @@ html {
 
 .p-4 {
   padding: 1rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
 }
 
 .p-6 {
@@ -1391,6 +1381,11 @@ html {
   .sm\:py-32 {
     padding-top: 8rem;
     padding-bottom: 8rem;
+  }
+
+  .sm\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   .sm\:pb-16 {

@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: currentColor;
+  border-color: #e5e7eb;
   /* 2 */
 }
 
@@ -527,13 +527,15 @@ html {
 }
 
 .card-corporate {
+  position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
   border-radius: 1rem;
-  background-color: rgb(242 242 242 / var(--tw-bg-opacity));
-  --tw-bg-opacity: 0.25;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.5;
   padding: 2rem;
   transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -542,6 +544,12 @@ html {
 
 .card-corporate:hover {
   --tw-bg-opacity: 1;
+}
+
+@media (min-width: 1024px) {
+  .card-corporate {
+    flex-direction: row;
+  }
 }
 
 .container-partner-logo {
@@ -602,10 +610,6 @@ html {
 
 .-top-1\/4 {
   top: -25%;
-}
-
-.left-0 {
-  left: 0px;
 }
 
 .right-0 {
@@ -728,6 +732,10 @@ html {
 
 .h-full {
   height: 100%;
+}
+
+.h-16 {
+  height: 4rem;
 }
 
 .w-0 {
@@ -1020,6 +1028,11 @@ html {
   background-color: rgb(170 130 60 / var(--tw-bg-opacity));
 }
 
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
 .bg-medium-white {
   --tw-bg-opacity: 1;
   background-color: rgb(251 251 251 / var(--tw-bg-opacity));
@@ -1032,6 +1045,10 @@ html {
 
 .bg-opacity-10 {
   --tw-bg-opacity: 0.1;
+}
+
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
 }
 
 .p-0 {
@@ -1221,6 +1238,11 @@ html {
   letter-spacing: 0.05em;
 }
 
+.text-blue-800 {
+  --tw-text-opacity: 1;
+  color: rgb(30 64 175 / var(--tw-text-opacity));
+}
+
 .text-darken-blue {
   --tw-text-opacity: 1;
   color: rgb(11 31 42 / var(--tw-text-opacity));
@@ -1241,16 +1263,16 @@ html {
   color: rgb(251 251 251 / var(--tw-text-opacity));
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
 .opacity-10 {
   opacity: 0.1;
 }
 
 .opacity-20 {
   opacity: 0.2;
-}
-
-.opacity-25 {
-  opacity: 0.25;
 }
 
 .opacity-5 {
@@ -1308,6 +1330,10 @@ html {
 .hover\:bg-light-gray:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(242 242 242 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-opacity-100:hover {
+  --tw-bg-opacity: 1;
 }
 
 .hover\:opacity-100:hover {
@@ -1379,6 +1405,10 @@ html {
     padding: 2rem;
   }
 
+  .sm\:p-0 {
+    padding: 0px;
+  }
+
   .sm\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -1402,6 +1432,11 @@ html {
   .sm\:py-32 {
     padding-top: 8rem;
     padding-bottom: 8rem;
+  }
+
+  .sm\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .sm\:pb-16 {
@@ -1527,6 +1562,10 @@ html {
     display: flex;
   }
 
+  .lg\:h-12 {
+    height: 3rem;
+  }
+
   .lg\:max-w-2xl {
     max-width: 42rem;
   }
@@ -1535,12 +1574,20 @@ html {
     max-width: 36rem;
   }
 
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
   }
 
   .lg\:text-6xl {

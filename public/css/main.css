@@ -526,6 +526,24 @@ html {
   --tw-backdrop-sepia:  ;
 }
 
+.card-corporate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  border-radius: 1rem;
+  background-color: rgb(242 242 242 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.25;
+  padding: 2rem;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.card-corporate:hover {
+  --tw-bg-opacity: 1;
+}
+
 .container-partner-logo {
   display: flex;
   aspect-ratio: 1 / 1;
@@ -659,6 +677,10 @@ html {
   margin-top: 0.625rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .flex {
   display: flex;
 }
@@ -675,8 +697,20 @@ html {
   aspect-ratio: 1 / 1;
 }
 
+.h-0 {
+  height: 0px;
+}
+
+.h-0\.5 {
+  height: 0.125rem;
+}
+
 .h-1\/2 {
   height: 50%;
+}
+
+.h-12 {
+  height: 3rem;
 }
 
 .h-14 {
@@ -724,6 +758,10 @@ html {
   width: 5rem;
 }
 
+.w-64 {
+  width: 16rem;
+}
+
 .w-\[10\.5rem\] {
   width: 10.5rem;
 }
@@ -747,10 +785,6 @@ html {
 
 .max-w-5xl {
   max-width: 64rem;
-}
-
-.max-w-6xl {
-  max-width: 72rem;
 }
 
 .max-w-7xl {
@@ -945,6 +979,10 @@ html {
   border-radius: 1.5rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -1004,10 +1042,6 @@ html {
   padding: 0.25rem;
 }
 
-.p-10 {
-  padding: 2.5rem;
-}
-
 .p-12 {
   padding: 3rem;
 }
@@ -1026,6 +1060,10 @@ html {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .px-0 {
@@ -1209,6 +1247,10 @@ html {
 
 .opacity-20 {
   opacity: 0.2;
+}
+
+.opacity-25 {
+  opacity: 0.25;
 }
 
 .opacity-5 {

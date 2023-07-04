@@ -660,11 +660,6 @@ html {
   margin-bottom: 0.875rem;
 }
 
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .mr-0 {
   margin-right: 0px;
 }
@@ -1046,10 +1041,6 @@ html {
   --tw-bg-opacity: 0.1;
 }
 
-.bg-opacity-25 {
-  --tw-bg-opacity: 0.25;
-}
-
 .p-0 {
   padding: 0px;
 }
@@ -1344,12 +1335,12 @@ html {
     grid-column-start: 2;
   }
 
-  .sm\:mt-8 {
-    margin-top: 2rem;
-  }
-
   .sm\:mt-0 {
     margin-top: 0px;
+  }
+
+  .sm\:mt-8 {
+    margin-top: 2rem;
   }
 
   .sm\:block {

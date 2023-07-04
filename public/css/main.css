@@ -529,6 +529,8 @@ html {
 .card-corporate {
   position: relative;
   display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -548,6 +550,7 @@ html {
 
 @media (min-width: 1024px) {
   .card-corporate {
+    height: 14rem;
     flex-direction: row;
   }
 }
@@ -657,6 +660,11 @@ html {
   margin-bottom: 0.875rem;
 }
 
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .mr-0 {
   margin-right: 0px;
 }
@@ -713,12 +721,12 @@ html {
   height: 50%;
 }
 
-.h-12 {
-  height: 3rem;
-}
-
 .h-14 {
   height: 3.5rem;
+}
+
+.h-16 {
+  height: 4rem;
 }
 
 .h-8 {
@@ -732,10 +740,6 @@ html {
 
 .h-full {
   height: 100%;
-}
-
-.h-16 {
-  height: 4rem;
 }
 
 .w-0 {
@@ -1028,11 +1032,6 @@ html {
   background-color: rgb(170 130 60 / var(--tw-bg-opacity));
 }
 
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
 .bg-medium-white {
   --tw-bg-opacity: 1;
   background-color: rgb(251 251 251 / var(--tw-bg-opacity));
@@ -1047,8 +1046,8 @@ html {
   --tw-bg-opacity: 0.1;
 }
 
-.bg-opacity-50 {
-  --tw-bg-opacity: 0.5;
+.bg-opacity-25 {
+  --tw-bg-opacity: 0.25;
 }
 
 .p-0 {
@@ -1077,10 +1076,6 @@ html {
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.p-8 {
-  padding: 2rem;
 }
 
 .px-0 {
@@ -1332,10 +1327,6 @@ html {
   background-color: rgb(242 242 242 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-opacity-100:hover {
-  --tw-bg-opacity: 1;
-}
-
 .hover\:opacity-100:hover {
   opacity: 1;
 }
@@ -1355,6 +1346,10 @@ html {
 
   .sm\:mt-8 {
     margin-top: 2rem;
+  }
+
+  .sm\:mt-0 {
+    margin-top: 0px;
   }
 
   .sm\:block {
@@ -1405,10 +1400,6 @@ html {
     padding: 2rem;
   }
 
-  .sm\:p-0 {
-    padding: 0px;
-  }
-
   .sm\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -1429,14 +1420,14 @@ html {
     padding-right: 6rem;
   }
 
-  .sm\:py-32 {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  }
-
   .sm\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .sm\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .sm\:pb-16 {
@@ -1584,10 +1575,6 @@ html {
 
   .lg\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
-  .lg\:flex-row {
-    flex-direction: row;
   }
 
   .lg\:text-6xl {

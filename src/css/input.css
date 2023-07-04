@@ -10,7 +10,7 @@
 
 @layer components {
     .card-corporate {
-        @apply relative flex flex-col items-center justify-center gap-8 p-8 transition-opacity bg-gray-100 bg-opacity-50 lg:flex-row rounded-2xl hover:bg-opacity-100;
+        @apply h-fit lg:h-56 relative flex flex-col items-center justify-center gap-8 p-8 transition-opacity bg-gray-100 bg-opacity-50 lg:flex-row rounded-2xl hover:bg-opacity-100;
     }
     .container-partner-logo {
         @apply aspect-square flex items-center transition opacity-50 hover:opacity-100 grayscale hover:grayscale-0;

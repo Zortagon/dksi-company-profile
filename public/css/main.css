@@ -681,6 +681,10 @@ html {
   z-index: 20;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -947,6 +951,10 @@ html {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.resize-none {
+  resize: none;
 }
 
 .auto-cols-max {
@@ -1261,6 +1269,10 @@ html {
   padding: 1px;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -1344,6 +1356,11 @@ html {
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .pb-8 {
@@ -1545,6 +1562,10 @@ html {
 
 .opacity-30 {
   opacity: 0.3;
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 .shadow-sm {
@@ -1828,6 +1849,10 @@ html {
   .sm\:opacity-10 {
     opacity: 0.1;
   }
+
+  .sm\:opacity-5 {
+    opacity: 0.05;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1878,6 +1903,10 @@ html {
 
   .md\:place-items-end {
     place-items: end;
+  }
+
+  .md\:justify-normal {
+    justify-content: normal;
   }
 
   .md\:justify-start {
@@ -1970,6 +1999,12 @@ html {
   }
 
   .lg\:opacity-100 {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:opacity-100 {
     opacity: 1;
   }
 }

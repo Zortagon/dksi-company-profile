@@ -45,27 +45,34 @@
                     <img src="./img/nav/text.svg" alt="DKSI" class="w-14">
                 </a>
                 <ul
-                    class="items-center hidden gap-5 text-sm font-semibold tracking-wider uppercase md:flex text-darken-blue">
-                    <li>
+                    class="flex items-center gap-5 text-sm font-semibold tracking-wider uppercase text-darken-blue">
+                    <li class="hidden md:block">
                         <a href="#services" class="p-2.5 transition-colors hover:bg-gray-500/10 rounded-md">Services</a>
                     </li>
-                    <li>
+                    <li class="hidden md:block">
                         <a href="#" class="p-2.5 transition-colors hover:bg-gray-500/10 rounded-md">Products</a>
                     </li>
-                    <li>
+                    <li class="hidden md:block">
                         <a href="#" class="p-2.5 transition-colors hover:bg-gray-500/10 rounded-md">Company</a>
                     </li>
-                    <li>
+                    <li class="flex items-center gap-5 text-sm font-semibold tracking-wider uppercase text-darken-blue ">
+                        <a href="#contact" class="p-2.5 bg-cream text-darken-gold rounded-md">Contact</a>
+                        <div class="flex items-center gap-5 md:hidden">
+                            <div class="w-0.5 h-6 rounded-lg bg-darken-blue bg-opacity-10"></div>
+                            <i class="text-3xl font-extralight ri-menu-5-line" id="nav-toggle"></i>
+                        </div>
+                    </li>
+                    <!-- <li>
                         <a href="#contact"
                             class="p-2.5 bg-cream text-darken-gold rounded-md hover:bg-opacity-50 transition-colors">Contact</a>
-                    </li>
+                    </li> -->
                 </ul>
-                <div
-                    class="flex items-center gap-5 text-sm font-semibold tracking-wider uppercase md:hidden text-darken-blue">
-                    <a href="#" class="p-2.5 bg-cream text-darken-gold rounded-md hidden sm:block">Contact</a>
+                <!-- <div
+                    class="flex items-center gap-5 text-sm font-semibold tracking-wider uppercase text-darken-blue">
+                    <a href="#contact" class="p-2.5 bg-cream text-darken-gold rounded-md">Contact</a>
                     <div class="w-0.5 h-1/2 bg-darken-blue bg-opacity-10 hidden sm:block rounded-lg"></div>
-                    <i class="text-3xl font-extralight ri-menu-5-line"></i>
-                </div>
+                    <i class="text-3xl font-extralight ri-menu-5-line" id="nav-toggle"></i>
+                </div> -->
             </div>
         </nav>
     </header>

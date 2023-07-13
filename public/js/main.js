@@ -1,4 +1,12 @@
-var swiper = new Swiper(".swiper-partners", {
+const navToggle = document.getElementById('nav-toggle');
+
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        alert('Hello');
+    })
+}
+
+let swiper = new Swiper(".swiper-partners", {
     loop: true,
     spaceBetween: 75,
     pagination: {

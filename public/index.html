@@ -38,14 +38,13 @@
                 </a>
             </div>
         </div>
-        <nav class="border-b-[1px] border-gray-200/75 bg-white/90 backdrop-blur-md">
+        <nav class="border-b-[1px] border-gray-200/75 bg-white">
             <div class="flex justify-between px-5 py-5 mx-auto max-w-7xl">
                 <a href="#" class="flex flex-row items-center gap-4">
                     <img src="./img/element/crown.svg" alt="Crown" class="w-10">
                     <img src="./img/nav/text.svg" alt="DKSI" class="w-14">
                 </a>
-                <ul
-                    class="flex items-center gap-5 text-sm font-semibold tracking-wider uppercase text-darken-blue">
+                <ul class="flex items-center gap-5 text-sm font-semibold tracking-wider uppercase text-darken-blue">
                     <li class="hidden md:block">
                         <a href="#services" class="p-2.5 transition-colors hover:bg-gray-500/10 rounded-md">Services</a>
                     </li>
@@ -55,7 +54,8 @@
                     <li class="hidden md:block">
                         <a href="#" class="p-2.5 transition-colors hover:bg-gray-500/10 rounded-md">Company</a>
                     </li>
-                    <li class="flex items-center gap-5 text-sm font-semibold tracking-wider uppercase text-darken-blue ">
+                    <li
+                        class="flex items-center gap-5 text-sm font-semibold tracking-wider uppercase text-darken-blue ">
                         <a href="#contact" class="p-2.5 bg-cream text-darken-gold rounded-md">Contact</a>
                         <div class="flex items-center gap-5 md:hidden">
                             <div class="w-0.5 h-6 rounded-lg bg-darken-blue bg-opacity-10"></div>
@@ -66,6 +66,7 @@
                         <a href="#contact"
                             class="p-2.5 bg-cream text-darken-gold rounded-md hover:bg-opacity-50 transition-colors">Contact</a>
                     </li> -->
+                    <!-- <div class="fixed top-0 z-20 w-screen h-screen bg-red-300"></div> -->
                 </ul>
                 <!-- <div
                     class="flex items-center gap-5 text-sm font-semibold tracking-wider uppercase text-darken-blue">
@@ -76,6 +77,7 @@
             </div>
         </nav>
     </header>
+    <div class="fixed top-0 z-20 w-full h-full bg-black/50 lg:hidden"></div>
     <main>
         <!-- Section: Hero -->
         <section class="py-16 overflow-hidden rounded-3xl bg-medium-white">
@@ -800,6 +802,8 @@
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+        integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>

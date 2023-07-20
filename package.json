@@ -1,0 +1,11 @@
+{
+  "name": "dksi-company-profile",
+  "version": "1.2.0",
+  "description": "Experimental development  DKSI Company Profile",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aldian Fernanda",
+  "license": "ISC"
+}

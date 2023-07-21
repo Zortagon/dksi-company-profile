@@ -12,3 +12,9 @@
         background-color: #f9fafe;
     }
 }
+
+@layer components {
+    .content-container {
+        @apply max-w-7xl px-5 mx-auto;
+    }
+}

@@ -11,29 +11,73 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
-    <!-- CSS: Flowbite -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet"/>
     <!-- CSS: Remix Icon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <!-- CSS: Core -->
     <link href="./css/main.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="sticky top-0">
         <!-- TOP BAR -->
-        <div class="hidden py-2 bg-primary-blue md:block">
+        <nav class="hidden py-2 bg-primary-blue md:block">
             <div class="flex justify-center content-container">
                 <div class="text-sm text-white/80 transition-colors hover:text-white">
                     <a href="#" class="flex items-center gap-1">We're also available on various other platforms. More
-                        Information
-                        <i class="ri-arrow-right-line"></i>
+                        Information ->
                     </a>
                 </div>
             </div>
-        </div>
-        <!-- NAV BAR -->
+        </nav>
+        <nav class="w-full border-gray-200/75 bg-white border-b-[1px]">
+            <div class="relative flex flex-wrap items-center content-container">
+                <div class="flex h-20 grow flex-wrap items-center justify-between overflow-hidden">
+                    <a href="#" class="inline-flex h-full gap-3.5">
+                        <img src="./img/element/crown.svg" alt="DKSI Logo" class="w-10">
+                        <img src="./img/nav/text.svg" alt="" class="hidden w-16 sm:block">
+                    </a>
+                    <div class="flex items-center">
+                        <a href="#" class="hidden sm:flex lg:hidden">Contact</a>
+                        <i class="h-fit items-center text-3xl ri-menu-5-line lg:hidden"></i>
+                    </div>
+                </div>
+                <ul class="flex w-full basis-full flex-col gap-0 text-primary-blue divide-y-[1px] divide-gray-300 lg:gap-3.5 lg:divide-y-0 lg:basis-0 lg:flex-row lg:pb-0">
+                    <li>
+                        <a href="#"
+                           class="flex rounded-lg px-0 py-2 font-medium transition-colors lg:px-3 lg:hover:bg-blue-900/10">Services</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                           class="flex rounded-lg px-0 py-2 font-medium transition-colors lg:px-3 lg:hover:bg-blue-900/10">Products</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                           class="flex rounded-lg px-0 py-2 font-medium transition-colors lg:px-3 lg:hover:bg-blue-900/10">Company</a>
+                    </li>
+                    <!--                    <li>-->
+                    <!--                        <button class="flex w-full items-center justify-between rounded-lg px-0 py-2 font-medium transition-colors gap-1.5 lg:px-3 lg:hover:bg-blue-900/10">-->
+                    <!--                            Solutions-->
+                    <!--                            <i class="opacity-50 ri-arrow-down-s-line"></i>-->
+                    <!--                        </button>-->
+                    <!--                    </li>-->
+                    <li class="relative flex flex-col items-center pt-5 divide-none lg:flex lg:pt-0">
+                        <div class="mb-5 flex h-1 w-16 rounded-lg bg-gray-300 lg:hidden"></div>
+                        <a href="#"
+                           class="relative z-10 mb-10 flex w-full justify-center rounded-lg bg-gradient-to-r px-0 py-2 text-white transition-colors font-[600] from-primary-gold to-primary-gold-100 sm:mb-0 sm:hidden lg:flex lg:px-3 lg:hover:bg-blue-900/10">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <!-- JS: Flowbite -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+
+
+    <!--    <div class="relative flex aspect-square w-24 bg-red-400">-->
+    <!--        <div class="absolute -bottom-full aspect-square w-24 bg-green-400">a</div>-->
+    <!--    </div>-->
+
+    <main class="pt-20 h-[2000px]">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores assumenda at consequatur culpa
+            dolore dolorem earum excepturi fugit iusto labore minima quae sed tempore, totam! Alias eaque ex
+            repellat?</p>
+    </main>
 </body>
 </html>

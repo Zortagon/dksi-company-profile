@@ -17,4 +17,12 @@
     .content-container {
         @apply mx-auto max-w-7xl px-5;
     }
+
+    .nav-link {
+        @apply flex justify-between rounded-lg px-0 py-2 font-medium transition-colors lg:px-3 lg:hover:bg-blue-900/10;
+    }
+
+    .btn-primary {
+        @apply rounded-lg bg-gradient-to-r px-3 py-2 text-white transition-all font-[600] from-primary-gold to-accent-gold lg:hover:from-primary-gold-100 lg:hover:to-accent-gold-100;
+    }
 }

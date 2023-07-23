@@ -28,7 +28,7 @@
                 </div>
             </div>
         </nav>
-        <nav class="w-full border-gray-200/75 bg-white border-b-[1px]">
+        <nav class="w-full border-gray-200/75 bg-white border-b-[1px]" id="navbar-main">
             <div class="relative flex flex-wrap items-center content-container">
                 <div class="flex h-20 grow flex-wrap items-center justify-between overflow-hidden">
                     <a href="#" class="inline-flex h-full gap-3.5">
@@ -43,7 +43,7 @@
                         </button>
                     </div>
                 </div>
-                <ul class="hidden w-full basis-full flex-col gap-0 text-primary-blue divide-y-[1px] divide-gray-300 lg:gap-3.5 lg:divide-y-0 lg:flex lg:basis-0 lg:flex-row lg:pb-0"
+                <ul class="relative hidden w-full basis-full flex-col gap-0 text-primary-blue divide-y-[1px] divide-gray-300 lg:gap-3.5 lg:divide-y-0 lg:flex lg:basis-0 lg:flex-row lg:pb-0"
                     id="navbar-menu">
                     <li>
                         <a href="#" class="nav-link">Services</a>
@@ -59,11 +59,12 @@
                             Solutions
                             <i class="opacity-50 ri-arrow-down-s-line"></i>
                         </button>
+                        <div class="static lg:absolute bg-red-400 w-full left-0 mt-0 lg:mt-5 rounded-lg">puky</div>
                     </li>
                     <li class="relative flex flex-col items-center pt-5 divide-none lg:flex lg:pt-0">
                         <div class="mb-5 flex h-1 w-16 rounded-lg bg-gray-300 lg:hidden"></div>
                         <a href="#"
-                           class="mb-10 flex w-full justify-center btn-primary sm:mb-0 sm:hidden lg:flex">Contact</a>
+                           class="btn-contact mb-10 flex w-full justify-center btn-primary sm:mb-0 sm:hidden lg:flex">Contact</a>
                     </li>
                 </ul>
             </div>

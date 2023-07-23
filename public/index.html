@@ -36,48 +36,46 @@
                         <img src="./img/nav/text.svg" alt="" class="hidden w-16 sm:block">
                     </a>
                     <div class="flex items-center">
-                        <a href="#" class="hidden sm:flex lg:hidden">Contact</a>
-                        <i class="h-fit items-center text-3xl ri-menu-5-line lg:hidden"></i>
+                        <a href="#" class="hidden btn-primary sm:flex lg:hidden">Contact</a>
+                        <div class="hidden h-5 rounded bg-gray-200 w-0.5 mx-3.5 sm:flex lg:hidden"></div>
+                        <button type="button" aria-expanded="false" aria-controls="navbar-menu" id="menu-button">
+                            <i class="h-fit items-center text-3xl ri-menu-5-line lg:hidden"></i>
+                        </button>
                     </div>
                 </div>
-                <ul class="flex w-full basis-full flex-col gap-0 text-primary-blue divide-y-[1px] divide-gray-300 lg:gap-3.5 lg:divide-y-0 lg:basis-0 lg:flex-row lg:pb-0">
+                <ul class="hidden w-full basis-full flex-col gap-0 text-primary-blue divide-y-[1px] divide-gray-300 lg:gap-3.5 lg:divide-y-0 lg:flex lg:basis-0 lg:flex-row lg:pb-0"
+                    id="navbar-menu">
                     <li>
-                        <a href="#"
-                           class="flex rounded-lg px-0 py-2 font-medium transition-colors lg:px-3 lg:hover:bg-blue-900/10">Services</a>
+                        <a href="#" class="nav-link">Services</a>
                     </li>
                     <li>
-                        <a href="#"
-                           class="flex rounded-lg px-0 py-2 font-medium transition-colors lg:px-3 lg:hover:bg-blue-900/10">Products</a>
+                        <a href="#" class="nav-link">Products</a>
                     </li>
                     <li>
-                        <a href="#"
-                           class="flex rounded-lg px-0 py-2 font-medium transition-colors lg:px-3 lg:hover:bg-blue-900/10">Company</a>
+                        <a href="#" class="nav-link">Company</a>
                     </li>
-                    <!--                    <li>-->
-                    <!--                        <button class="flex w-full items-center justify-between rounded-lg px-0 py-2 font-medium transition-colors gap-1.5 lg:px-3 lg:hover:bg-blue-900/10">-->
-                    <!--                            Solutions-->
-                    <!--                            <i class="opacity-50 ri-arrow-down-s-line"></i>-->
-                    <!--                        </button>-->
-                    <!--                    </li>-->
+                    <li>
+                        <button class="flex w-full items-center justify-between rounded-lg px-0 py-2 font-medium transition-colors gap-1.5 lg:px-3 lg:hover:bg-blue-900/10">
+                            Solutions
+                            <i class="opacity-50 ri-arrow-down-s-line"></i>
+                        </button>
+                    </li>
                     <li class="relative flex flex-col items-center pt-5 divide-none lg:flex lg:pt-0">
                         <div class="mb-5 flex h-1 w-16 rounded-lg bg-gray-300 lg:hidden"></div>
                         <a href="#"
-                           class="relative z-10 mb-10 flex w-full justify-center rounded-lg bg-gradient-to-r px-0 py-2 text-white transition-colors font-[600] from-primary-gold to-primary-gold-100 sm:mb-0 sm:hidden lg:flex lg:px-3 lg:hover:bg-blue-900/10">Contact</a>
+                           class="mb-10 flex w-full justify-center btn-primary sm:mb-0 sm:hidden lg:flex">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
 
-
-    <!--    <div class="relative flex aspect-square w-24 bg-red-400">-->
-    <!--        <div class="absolute -bottom-full aspect-square w-24 bg-green-400">a</div>-->
-    <!--    </div>-->
-
-    <main class="pt-20 h-[2000px]">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores assumenda at consequatur culpa
-            dolore dolorem earum excepturi fugit iusto labore minima quae sed tempore, totam! Alias eaque ex
-            repellat?</p>
-    </main>
+    <!-- JS: JQuery -->
+    <script
+            src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+            crossorigin="anonymous"></script>
+    <!-- JS: Core -->
+    <script src="./js/main.js"></script>
 </body>
 </html>

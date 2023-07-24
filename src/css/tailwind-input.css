@@ -18,7 +18,7 @@
 }
 
 .nav-link-dropdown-active {
-    @apply fixed top-0 left-0 border-gray-200/75 bg-white px-5 text-lg py-[1.625rem] border-b-[1px] rounded-none;
+    @apply fixed top-0 left-0 rounded-none border-gray-200/75 bg-white px-5 text-lg py-[1.625rem] border-b-[1px];
 }
 
 @layer components {
@@ -36,5 +36,9 @@
 
     .btn-primary {
         @apply rounded-lg bg-gradient-to-r px-3 py-2 text-white font-[600] from-primary-gold to-accent-gold lg:hover:from-primary-gold-100 lg:hover:to-accent-gold-100;
+    }
+
+    .btn-mono {
+        @apply font-mono font-semibold text-accent-gold;
     }
 }

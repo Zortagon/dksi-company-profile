@@ -10,6 +10,9 @@ module.exports = {
                 'primary-gold-100': '#85682c',
                 'accent-gold': '#aa823c',
                 'accent-gold-100': '#705628',
+            },
+            fontFamily: {
+                'mono': ['JetBrains Mono', 'ui-monospace', 'monospace']
             }
         },
     },

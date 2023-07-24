@@ -17,7 +17,7 @@
     <link href="./css/main.css" rel="stylesheet">
 </head>
 <body>
-    <header class="sticky top-0">
+    <header class="sticky top-0 overflow-y-auto border-gray-200/75 max-h-[90vh] border-b-[1px] lg:overflow-visible">
         <!-- TOP BAR -->
         <nav class="hidden py-2 bg-primary-blue md:block">
             <div class="flex justify-center content-container">
@@ -28,9 +28,10 @@
                 </div>
             </div>
         </nav>
-        <nav class="w-full border-gray-200/75 bg-white border-b-[1px]" id="navbar-main">
-            <div class="relative flex flex-wrap items-center content-container">
-                <div class="flex h-20 grow flex-wrap items-center justify-between overflow-hidden">
+        <!-- NAVIGATION BAR -->
+        <nav class="relative w-full bg-white" id="navbar-main">
+            <div class="flex flex-wrap items-center content-container">
+                <div class="flex h-20 grow flex-wrap items-center justify-between overflow-hidden nav-el-page">
                     <a href="#" class="inline-flex h-full gap-3.5">
                         <img src="./img/element/crown.svg" alt="DKSI Logo" class="w-10">
                         <img src="./img/nav/text.svg" alt="" class="hidden w-16 sm:block">
@@ -43,39 +44,131 @@
                         </button>
                     </div>
                 </div>
-                <ul class="relative hidden w-full basis-full flex-col gap-0 text-primary-blue divide-y-[1px] divide-gray-300 lg:gap-3.5 lg:divide-y-0 lg:flex lg:basis-0 lg:flex-row lg:pb-0"
+                <ul class="hidden w-full basis-full flex-col gap-0 text-primary-blue divide-y-[1px] divide-gray-300 lg:gap-3.5 lg:divide-y-0 lg:flex lg:basis-0 lg:flex-row lg:pb-0"
                     id="navbar-menu">
-                    <li>
+                    <li class="nav-el-page">
                         <a href="#" class="nav-link">Services</a>
                     </li>
-                    <li>
+                    <li class="nav-el-page">
                         <a href="#" class="nav-link">Products</a>
                     </li>
-                    <li>
+                    <li class="nav-el-page">
                         <a href="#" class="nav-link">Company</a>
                     </li>
                     <li>
-                        <button class="flex w-full items-center justify-between rounded-lg px-0 py-2 font-medium transition-colors gap-1.5 lg:px-3 lg:hover:bg-blue-900/10">
+                        <button class="nav-link-dropdown"
+                                id="nav-button-solutions">
                             Solutions
-                            <i class="opacity-50 ri-arrow-down-s-line"></i>
+                            <i class="text-primary-blue/50 ri-arrow-down-s-line arrow-down-solutions"></i>
                         </button>
-                        <div class="static lg:absolute bg-red-400 w-full left-0 mt-0 lg:mt-5 rounded-lg">puky</div>
+                        <div class="static top-0 left-0 z-30 mt-20 hidden w-full bg-white lg:absolute lg:top-auto lg:mt-5"
+                             id="nav-submenu-solutions">
+                            <div class="mx-auto max-w-7xl px-0 lg:px-5">
+                                <ul class="grid grid-cols-1 py-8 gap-10 lg:gap-3.5 md:grid-cols-2 lg:grid-cols-3">
+                                    <li class="flex items-center justify-center p-0 lg:p-5">
+                                        <div class="flex flex-col gap-2.5 text-primary-blue">
+                                            <div class="flex items-center gap-3.5">
+                                                <img src="./img/nav/solutions/it-infrastructure.svg" alt=""
+                                                     class="w-5 lg:w-8">
+                                                <h2 class="font-semibold lg:text-xl">IT Infrastructure</h2>
+                                            </div>
+                                            <p class="text-sm text-primary-blue/75">Lorem ipsum dolor sit amet,
+                                                consectetuer adipiscing elit,
+                                                sed diam
+                                                nonummy nibh euismod Lorem ipsum dolor sit amet, consectetuer.</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-center justify-center p-0 lg:p-5">
+                                        <div class="flex flex-col gap-2.5 text-primary-blue">
+                                            <div class="flex items-center gap-3.5">
+                                                <img src="./img/nav/solutions/data-center.svg" alt=""
+                                                     class="w-5 lg:w-8">
+                                                <h2 class="font-semibold lg:text-xl">Data Center</h2>
+                                            </div>
+                                            <p class="text-sm text-primary-blue/75">Lorem ipsum dolor sit amet,
+                                                consectetuer adipiscing elit,
+                                                sed diam
+                                                nonummy nibh euismod Lorem ipsum dolor sit amet, consectetuer.</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-center justify-center p-0 lg:p-5">
+                                        <div class="flex flex-col gap-2.5 text-primary-blue">
+                                            <div class="flex items-center gap-3.5">
+                                                <img src="./img/nav/solutions/firewall.svg" alt="" class="w-5 lg:w-8">
+                                                <h2 class="font-semibold lg:text-xl">Firewall</h2>
+                                            </div>
+                                            <p class="text-sm text-primary-blue/75">Lorem ipsum dolor sit amet,
+                                                consectetuer adipiscing elit,
+                                                sed diam
+                                                nonummy nibh euismod Lorem ipsum dolor sit amet, consectetuer.</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-center justify-center p-0 lg:p-5">
+                                        <div class="flex flex-col gap-2.5 text-primary-blue">
+                                            <div class="flex items-center gap-3.5">
+                                                <img src="./img/nav/solutions/hyper-coverged-server.svg" alt=""
+                                                     class="w-5 lg:w-8">
+                                                <h2 class="font-semibold lg:text-xl">Hyper-Converged Server</h2>
+                                            </div>
+                                            <p class="text-sm text-primary-blue/75">Lorem ipsum dolor sit amet,
+                                                consectetuer adipiscing elit,
+                                                sed diam
+                                                nonummy nibh euismod Lorem ipsum dolor sit amet, consectetuer.</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-center justify-center p-0 lg:p-5">
+                                        <div class="flex flex-col gap-2.5 text-primary-blue">
+                                            <div class="flex items-center gap-3.5">
+                                                <img src="./img/nav/solutions/networking.svg" alt="" class="w-5 lg:w-8">
+                                                <h2 class="font-semibold lg:text-xl">Networking</h2>
+                                            </div>
+                                            <p class="text-sm text-primary-blue/75">Lorem ipsum dolor sit amet,
+                                                consectetuer adipiscing elit,
+                                                sed diam
+                                                nonummy nibh euismod Lorem ipsum dolor sit amet, consectetuer.</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-center justify-center p-0 lg:p-5">
+                                        <div class="flex flex-col gap-2.5 text-primary-blue">
+                                            <div class="flex items-center gap-3.5">
+                                                <img src="./img/nav/solutions/audio-visual-education.svg" alt=""
+                                                     class="w-5 lg:w-8">
+                                                <h2 class="font-semibold lg:text-xl">Educational Audiovisuals</h2>
+                                            </div>
+                                            <p class="text-sm text-primary-blue/75">Lorem ipsum dolor sit amet,
+                                                consectetuer adipiscing elit,
+                                                sed diam
+                                                nonummy nibh euismod Lorem ipsum dolor sit amet, consectetuer.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="flex w-full justify-center border-gray-200/75 bg-white py-3.5 border-t-[1px]">
+                                <a href="#">Read more our client experiences -></a>
+                            </div>
+                        </div>
                     </li>
-                    <li class="relative flex flex-col items-center pt-5 divide-none lg:flex lg:pt-0">
+                    <li class="relative flex flex-col items-center pt-5 divide-none nav-el-page lg:flex lg:pt-0">
                         <div class="mb-5 flex h-1 w-16 rounded-lg bg-gray-300 lg:hidden"></div>
                         <a href="#"
-                           class="btn-contact mb-10 flex w-full justify-center btn-primary sm:mb-0 sm:hidden lg:flex">Contact</a>
+                           class="mb-10 flex w-full justify-center btn-contact btn-primary sm:mb-0 sm:hidden lg:flex">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
 
+    <main class="">
+        <div class="bg-red-600 w-full h-[1000px]"></div>
+        <div class="bg-primary-blue w-full h-[1000px]"></div>
+    </main>
+
     <!-- JS: JQuery -->
     <script
             src="https://code.jquery.com/jquery-3.7.0.min.js"
             integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
             crossorigin="anonymous"></script>
+
     <!-- JS: Core -->
     <script src="./js/main.js"></script>
 </body>

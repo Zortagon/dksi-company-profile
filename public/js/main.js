@@ -71,7 +71,8 @@ $(document).ready(function () {
         let width = $(window).width();
         if (isSolutionMenuShowed()) {
             if (width < 1024) {
-                showSolutionMenu(true);
+                showExpandNavBar(true);
+                showSolutionMenu(true)
                 isolateBodyScroll(true);
             } else {
                 $('.nav-el-page').removeClass('hidden');

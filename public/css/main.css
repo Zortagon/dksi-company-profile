@@ -954,7 +954,7 @@ body {
 }
 
 .bg-hero-abstract {
-  background-image: url('./public/img/element/abstract.svg');
+  background-image: url('../img/element/abstract.svg');
 }
 
 .from-primary-gold {

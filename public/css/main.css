@@ -954,7 +954,7 @@ body {
 }
 
 .bg-hero-abstract {
-  background-image: url('/public/img/element/abstract.svg');
+  background-image: url('./public/img/element/abstract.svg');
 }
 
 .from-primary-gold {
@@ -1100,23 +1100,8 @@ body {
   color: rgb(254 249 195 / var(--tw-text-opacity));
 }
 
-.drop-shadow-\[0_0_15px_rgba\(0\2c 0\2c 0\2c 0\.075\)\] {
-  --tw-drop-shadow: drop-shadow(0 0 15px rgba(0,0,0,0.075));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.drop-shadow-\[0_30px_80px_rgba\(0\2c 0\2c 0\2c 0\.075\)\] {
-  --tw-drop-shadow: drop-shadow(0 30px 80px rgba(0,0,0,0.075));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .drop-shadow-\[0_30px_80px_rgba\(0\2c 0\2c 0\2c 0\.1\)\] {
   --tw-drop-shadow: drop-shadow(0 30px 80px rgba(0,0,0,0.1));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.drop-shadow-\[0_30px_80px_rgba\(0\2c 12\2c 121\2c 0\.1\)\] {
-  --tw-drop-shadow: drop-shadow(0 30px 80px rgba(0,12,121,0.1));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 

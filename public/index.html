@@ -16,13 +16,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
           rel="stylesheet">
+    <!-- FONT: Epilogue -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
     <!-- CSS: Remix Icon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <!-- CSS: Core -->
     <link href="./css/main.css" rel="stylesheet">
 </head>
-<body>
-    <header class="sticky top-0 overflow-y-auto border-gray-200/75 bg-white max-h-[85vh] border-b-[1px] lg:overflow-visible">
+<body class="overflow-x-hidden">
+    <header class="sticky top-0 z-50 overflow-y-auto border-gray-200/75 bg-white max-h-[90vh] border-b-[1px] lg:overflow-visible overflow-x-hidden drop-shadow-[0_4px_8px_rgba(0,0,0,0.075)]">
         <!-- TOP BAR -->
         <nav class="hidden py-2 bg-primary-blue md:block">
             <div class="flex justify-center content-container">
@@ -35,7 +40,7 @@
         </nav>
         <!-- NAVIGATION BAR -->
         <nav class="relative w-full bg-white" id="navbar-main">
-            <div class="flex flex-wrap items-center content-container overflow-hidden">
+            <div class="flex flex-wrap items-center overflow-hidden content-container">
                 <div class="flex h-20 grow flex-wrap items-center justify-between overflow-hidden nav-el-page">
                     <a href="#" class="inline-flex h-full gap-3.5">
                         <img src="./img/element/crown.svg" alt="DKSI Logo" class="w-10">
@@ -66,9 +71,10 @@
                             Solutions
                             <i class="text-primary-blue/50 ri-arrow-down-s-line arrow-down-solutions"></i>
                         </button>
-                        <div class="static top-0 left-0 z-30 mt-20 hidden w-full border-gray-200/75 bg-white border-t-[0px] md:mt-11 lg:border-t-[1px] lg:absolute lg:top-auto lg:mt-5"
+                        <div class="static top-0 left-0 mt-20 hidden w-full border-gray-200/75 bg-white border-t-[0px] md:mt-11 lg:border-t-[1px] lg:absolute lg:top-auto lg:mt-5"
                              id="nav-submenu-solutions">
                             <div class="mx-auto max-w-7xl px-0 lg:px-5">
+
                                 <ul class="grid grid-cols-1 gap-10 py-8 md:grid-cols-2 lg:gap-3.5 lg:grid-cols-3">
                                     <li class="flex items-center justify-center p-0 lg:p-5">
                                         <div class="flex flex-col gap-2.5 text-primary-blue">
@@ -159,9 +165,10 @@
                                         </div>
                                     </li>
                                 </ul>
+                                <!--                                <div class="top-0 left-0 h-screen w-screen bg-red-400"></div>-->
                             </div>
-                            <div class="flex flex-col w-full items-center justify-center border-gray-200/75 bg-white py-3.5 border-b-[0px] lg:border-b-[1px] relative">
-                                <div class="absolute top-0 w-screen h-[1px] bg-gray-200/75"></div>
+                            <div class="relative flex w-full flex-col items-center justify-center border-gray-200/75 bg-white py-3.5 border-b-[0px] lg:border-b-[1px]">
+                                <div class="absolute top-0 w-screen bg-gray-200/75 h-[1px]"></div>
                                 <a href="#" class="btn-mono">
                                     Explore all of our solutions -></a>
                             </div>
@@ -177,9 +184,29 @@
         </nav>
     </header>
 
-    <main>
+    <main class="">
         <!-- SECTION: Hero -->
-        <section class="relative bg-">
+        <section class="relative">
+            <div class="absolute top-0 -z-10 w-full overflow-hidden bg-gradient-to-b h-[80%] from-primary-gold to-accent-gold rounded-b-[75px]">
+                <div class="relative flex h-full w-full items-center justify-center bg-cover bg-center bg-no-repeat bg-hero-abstract"></div>
+            </div>
+            <div class="relative flex flex-col gap-8 pt-16 text-center text-white content-container max-w-[52rem]">
+                <h1 class="text-5xl font-extrabold leading-tight font-title sm:text-6xl sm:leading-tight">Empowering
+                    Possibilities <span class="text-yellow-100">Unleashing Solutions</span></h1>
+                <p class="text-xl">Harness the power of cutting-edge ICT solutions to propel your business forward and
+                    stay ahead in
+                    today's competitive landscape.</p>
+                <a href="#" class="mx-auto w-fit text-xl font-bold uppercase text-white/90 mt-2.5 group">
+                    <p class="tracking-wider">Discover more about us</p>
+                    <div class="transition group-hover:translate-y-1">
+                        <i class="text-2xl ri-arrow-down-s-line"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <img src="./img/hero/highlight.png" alt="" class="drop-shadow-[0_30px_80px_rgba(0,0,0,0.1)]">
+                </a>
+                <!--                <div class="h-24 w-full bg-red-400"></div>-->
+            </div>
 
         </section>
     </main>

@@ -21,6 +21,14 @@
     @apply fixed top-0 left-0 rounded-none border-gray-200/75 bg-white px-5 text-lg py-[1.625rem] border-b-[1px];
 }
 
+.isolate-scroll {
+    @apply overflow-hidden max-h-full;
+}
+
+.font-title {
+    font-family: 'Epilogue', sans-serif;
+}
+
 @layer components {
     .content-container {
         @apply mx-auto max-w-7xl px-5;

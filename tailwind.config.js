@@ -3,6 +3,9 @@ module.exports = {
     content: ["./public/**/*.html"],
     theme: {
         extend: {
+            backgroundImage: {
+                'hero-abstract': "url('/public/img/element/abstract.svg')"
+            },
             colors: {
                 'white-background': '#f9fafe',
                 'primary-blue': '#0b1f2a',

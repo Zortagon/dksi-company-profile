@@ -7,9 +7,9 @@ $(document).ready(function () {
     // Used to lock the scroll on content when navbar expanded
     function isolateBodyScroll(state) {
         if (state) {
-            $('body').addClass('max-h-full overflow-hidden');
+            $('body').addClass('isolate-scroll');
         } else if (!state) {
-            $('body').removeClass('max-h-full overflow-hidden');
+            $('body').removeClass('isolate-scroll');
         }
     }
 
@@ -26,7 +26,7 @@ $(document).ready(function () {
                 $('.nav-el-page').addClass('hidden');
                 setTimeout(function () {
                     isolateBodyScroll(true)
-                }, 100);
+                }, 200);
             }
             $('.arrow-down-solutions').addClass('arrow-down-active');
         } else if (!state) {
@@ -63,7 +63,7 @@ $(document).ready(function () {
         }
     }
 
-    $('#menu-button').on('click', function (e) {
+    $('#menu-button').on('click', function () {
         showExpandNavBar(!isNavBarExpanded());
     });
 
@@ -86,10 +86,11 @@ $(document).ready(function () {
         }
     });
 
-    // $('main').on('scroll touchmove mousewheel', function (e) {
-    //     e.preventDefault();
-    //     e.stopPropagation();
-    // });
+    $("main").on('touchmove', function (e) {
+        if ($("body").hasClass('isolate-scroll')) {
+            showSolutionMenu(false);
+        }
+    });
 
     // $('body').addClass('expanded-header');
 

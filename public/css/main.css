@@ -989,6 +989,10 @@ body {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
+.bg-gradient-to-bl {
+  background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
+}
+
 .bg-hero-abstract {
   background-image: url('../img/element/abstract.svg');
 }
@@ -1123,14 +1127,14 @@ body {
   color: rgb(11 31 42 / 0.75);
 }
 
-.text-primary-gold {
-  --tw-text-opacity: 1;
-  color: rgb(202 157 66 / var(--tw-text-opacity));
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-white-background {
+  --tw-text-opacity: 1;
+  color: rgb(249 250 254 / var(--tw-text-opacity));
 }
 
 .text-white\/80 {
@@ -1144,6 +1148,21 @@ body {
 .text-yellow-100 {
   --tw-text-opacity: 1;
   color: rgb(254 249 195 / var(--tw-text-opacity));
+}
+
+.text-yellow-200 {
+  --tw-text-opacity: 1;
+  color: rgb(254 240 138 / var(--tw-text-opacity));
+}
+
+.text-accent-gold {
+  --tw-text-opacity: 1;
+  color: rgb(170 130 60 / var(--tw-text-opacity));
+}
+
+.text-primary-gold {
+  --tw-text-opacity: 1;
+  color: rgb(202 157 66 / var(--tw-text-opacity));
 }
 
 .drop-shadow-\[0_30px_80px_rgba\(0\2c 0\2c 0\2c 0\.1\)\] {

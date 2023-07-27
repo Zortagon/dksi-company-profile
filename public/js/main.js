@@ -63,7 +63,7 @@ $(document).ready(function () {
         }
     }
 
-    $('#menu-button').on('click', function () {
+    $('#menu-button').on('click', function (e) {
         showExpandNavBar(!isNavBarExpanded());
     });
 

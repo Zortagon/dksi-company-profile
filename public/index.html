@@ -22,7 +22,7 @@
     <link href="./css/main.css" rel="stylesheet">
 </head>
 <body>
-    <header class="sticky top-0 overflow-y-auto border-gray-200/75 max-h-[90vh] border-b-[1px] lg:overflow-visible">
+    <header class="sticky top-0 overflow-y-auto border-gray-200/75 bg-white max-h-[85vh] border-b-[1px] lg:overflow-visible">
         <!-- TOP BAR -->
         <nav class="hidden py-2 bg-primary-blue md:block">
             <div class="flex justify-center content-container">
@@ -35,7 +35,7 @@
         </nav>
         <!-- NAVIGATION BAR -->
         <nav class="relative w-full bg-white" id="navbar-main">
-            <div class="flex flex-wrap items-center content-container">
+            <div class="flex flex-wrap items-center content-container overflow-hidden">
                 <div class="flex h-20 grow flex-wrap items-center justify-between overflow-hidden nav-el-page">
                     <a href="#" class="inline-flex h-full gap-3.5">
                         <img src="./img/element/crown.svg" alt="DKSI Logo" class="w-10">
@@ -62,11 +62,11 @@
                     </li>
                     <li>
                         <button class="nav-link-dropdown"
-                                id="nav-button-solutions">
+                                id="nav-button-solutions" type="button">
                             Solutions
                             <i class="text-primary-blue/50 ri-arrow-down-s-line arrow-down-solutions"></i>
                         </button>
-                        <div class="static top-0 left-0 z-30 mt-20 hidden w-full bg-white lg:absolute lg:top-auto lg:mt-5"
+                        <div class="static top-0 left-0 z-30 mt-20 hidden w-full border-gray-200/75 bg-white border-t-[0px] md:mt-11 lg:border-t-[1px] lg:absolute lg:top-auto lg:mt-5"
                              id="nav-submenu-solutions">
                             <div class="mx-auto max-w-7xl px-0 lg:px-5">
                                 <ul class="grid grid-cols-1 gap-10 py-8 md:grid-cols-2 lg:gap-3.5 lg:grid-cols-3">
@@ -81,7 +81,7 @@
                                                 consectetuer adipiscing elit,
                                                 sed diam
                                                 nonummy nibh euismod Lorem ipsum dolor sit amet, consectetuer.</p>
-                                            <a href="#" class="btn-mono mt-2.5 text-primary-blue text-sm">
+                                            <a href="#" class="text-sm btn-mono mt-2.5 text-primary-blue">
                                                 Learn more -></a>
                                         </div>
                                     </li>
@@ -96,7 +96,7 @@
                                                 consectetuer adipiscing elit,
                                                 sed diam
                                                 nonummy nibh euismod Lorem ipsum dolor sit amet, consectetuer.</p>
-                                            <a href="#" class="btn-mono mt-2.5 text-primary-blue text-sm">
+                                            <a href="#" class="text-sm btn-mono mt-2.5 text-primary-blue">
                                                 Learn more -></a>
                                         </div>
                                     </li>
@@ -110,7 +110,7 @@
                                                 consectetuer adipiscing elit,
                                                 sed diam
                                                 nonummy nibh euismod Lorem ipsum dolor sit amet, consectetuer.</p>
-                                            <a href="#" class="btn-mono mt-2.5 text-primary-blue text-sm">
+                                            <a href="#" class="text-sm btn-mono mt-2.5 text-primary-blue">
                                                 Learn more -></a>
                                         </div>
                                     </li>
@@ -125,7 +125,7 @@
                                                 consectetuer adipiscing elit,
                                                 sed diam
                                                 nonummy nibh euismod Lorem ipsum dolor sit amet, consectetuer.</p>
-                                            <a href="#" class="btn-mono mt-2.5 text-primary-blue text-sm">
+                                            <a href="#" class="text-sm btn-mono mt-2.5 text-primary-blue">
                                                 Learn more -></a>
                                         </div>
                                     </li>
@@ -139,7 +139,7 @@
                                                 consectetuer adipiscing elit,
                                                 sed diam
                                                 nonummy nibh euismod Lorem ipsum dolor sit amet, consectetuer.</p>
-                                            <a href="#" class="btn-mono mt-2.5 text-primary-blue text-sm">
+                                            <a href="#" class="text-sm btn-mono mt-2.5 text-primary-blue">
                                                 Learn more -></a>
                                         </div>
                                     </li>
@@ -154,19 +154,20 @@
                                                 consectetuer adipiscing elit,
                                                 sed diam
                                                 nonummy nibh euismod Lorem ipsum dolor sit amet, consectetuer.</p>
-                                            <a href="#" class="btn-mono mt-2.5 text-primary-blue text-sm">
+                                            <a href="#" class="text-sm btn-mono mt-2.5 text-primary-blue">
                                                 Learn more -></a>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="flex w-full justify-center border-gray-200/75 bg-white py-3.5 border-t-[1px]">
+                            <div class="flex flex-col w-full items-center justify-center border-gray-200/75 bg-white py-3.5 border-b-[0px] lg:border-b-[1px] relative">
+                                <div class="absolute top-0 w-screen h-[1px] bg-gray-200/75"></div>
                                 <a href="#" class="btn-mono">
                                     Explore all of our solutions -></a>
                             </div>
                         </div>
                     </li>
-                    <li class="relative flex flex-col items-center pt-5 divide-none nav-el-page lg:flex lg:pt-0">
+                    <li class="relative flex flex-col items-center pt-5 nav-el-page lg:flex lg:pt-0">
                         <div class="mb-5 flex h-1 w-16 rounded-lg bg-gray-300 lg:hidden"></div>
                         <a href="#"
                            class="mb-10 flex w-full justify-center btn-contact btn-primary sm:mb-0 sm:hidden lg:flex">Contact</a>
@@ -176,9 +177,11 @@
         </nav>
     </header>
 
-    <main class="">
-        <div class="w-full bg-red-600 h-[1000px]"></div>
-        <div class="w-full bg-primary-blue h-[1000px]"></div>
+    <main>
+        <!-- SECTION: Hero -->
+        <section class="relative bg-">
+
+        </section>
     </main>
 
     <!-- JS: JQuery -->

@@ -20,18 +20,22 @@ $(document).ready(function () {
     function showSolutionMenu(state) {
         if (state) {
             navSubMenuSolution.removeClass('hidden');
+            navMenu.removeClass('divide-y-[1px]');
             if ($(window).width() < 1024) {
                 navButtonSolution.addClass('nav-link-dropdown-active');
                 $('.nav-el-page').addClass('hidden');
-                isolateBodyScroll(true)
+                setTimeout(function () {
+                    isolateBodyScroll(true)
+                }, 100);
             }
             $('.arrow-down-solutions').addClass('arrow-down-active');
         } else if (!state) {
             navSubMenuSolution.addClass('hidden');
             navButtonSolution.removeClass('nav-link-dropdown-active');
+            navMenu.addClass('divide-y-[1px]');
             $('.nav-el-page').removeClass('hidden');
             $('.arrow-down-solutions').removeClass('arrow-down-active');
-            isolateBodyScroll(false)
+            isolateBodyScroll(false);
         }
     }
 

@@ -86,7 +86,7 @@ $(document).ready(function () {
         }
     });
 
-    $("main").on('touchmove', function (e) {
+    $("main").on('touchmove scroll', function (e) {
         if ($("body").hasClass('isolate-scroll')) {
             showSolutionMenu(false);
         }

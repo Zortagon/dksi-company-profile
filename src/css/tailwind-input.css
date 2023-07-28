@@ -22,7 +22,7 @@
 }
 
 .isolate-scroll {
-    @apply overflow-hidden max-h-full;
+    @apply max-h-full overflow-hidden;
 }
 
 .font-title {
@@ -32,6 +32,10 @@
 @layer components {
     .content-container {
         @apply mx-auto max-w-7xl px-5;
+    }
+
+    .offering-container {
+        @apply flex flex-col items-center gap-8 rounded-2xl border-gray-100 p-2 lg:flex-row lg:p-6 xl:p-10;
     }
 
     .nav-link {

@@ -26,7 +26,7 @@ $(document).ready(function () {
                 $('.nav-el-page').addClass('hidden');
                 setTimeout(function () {
                     isolateBodyScroll(true)
-                }, 200);
+                }, 100);
             }
             $('.arrow-down-solutions').addClass('arrow-down-active');
         } else if (!state) {
@@ -86,11 +86,11 @@ $(document).ready(function () {
         }
     });
 
-    $("main").on('touchmove scroll', function (e) {
-        if ($("body").hasClass('isolate-scroll')) {
-            showSolutionMenu(false);
-        }
-    });
+    // $("main").on('touchmove scroll', function (e) {
+    //     if ($("body").hasClass('isolate-scroll')) {
+    //         showSolutionMenu(false);
+    //     }
+    // });
 
     // $('body').addClass('expanded-header');
 

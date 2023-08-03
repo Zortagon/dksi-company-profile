@@ -1,2 +1,2 @@
 import $ from 'jquery'
-import '../css/input_tailwind.css'
+import '../css/input-tailwind.css'

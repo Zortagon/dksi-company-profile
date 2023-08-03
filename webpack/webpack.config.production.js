@@ -1,20 +1,21 @@
-const { merge } = require('webpack-merge')
-const commonConfiguration = require('./webpack.config')
-const TerserPlugin = require('terser-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const { merge } = require("webpack-merge");
+const commonConfiguration = require("./webpack.config");
+const TerserPlugin = require("terser-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = merge([
-    commonConfiguration, {
-        mode: 'production',
+    commonConfiguration,
+    {
+        mode: "production",
         output: {
-            filename: 'js/main.[contenthash].js',
+            filename: "js/main.[contenthash].js",
             environment: {
                 arrowFunction: false,
             },
         },
         plugins: [
             new MiniCssExtractPlugin({
-                filename: 'css/[name].[contenthash].css',
+                filename: "css/[name].[contenthash].css",
             }),
         ],
         module: {
@@ -23,10 +24,10 @@ module.exports = merge([
                     test: /\.(?:js|mjs|cjs)$/,
                     exclude: /node_modules/,
                     use: {
-                        loader: 'babel-loader',
+                        loader: "babel-loader",
                         options: {
                             presets: [
-                                ['@babel/preset-env', { targets: 'defaults' }],
+                                ["@babel/preset-env", { targets: "defaults" }],
                             ],
                         },
                     },
@@ -37,4 +38,5 @@ module.exports = merge([
             minimize: true,
             minimizer: [new TerserPlugin()],
         },
-    }])
+    },
+]);

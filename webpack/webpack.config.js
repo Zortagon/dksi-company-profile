@@ -1,30 +1,29 @@
-const HTMLWebpackPlugin = require('html-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const path = require('path')
+const HTMLWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const path = require("path");
 
 module.exports = {
-    entry: './src/js/index.js',
+    entry: "./src/js/index.js",
     output: {
-        path: path.resolve(__dirname, '../public'),
+        path: path.resolve(__dirname, "../public"),
         clean: true,
     },
     resolve: {
         alias: {
-            jquery: 'jquery/dist/jquery.slim.js',
+            jquery: "jquery/dist/jquery.slim.js",
         },
     },
-    plugins: [
-        new HTMLWebpackPlugin({ template: 'src/index.html' }),
-    ],
+    plugins: [new HTMLWebpackPlugin({ template: "src/index.html" })],
     module: {
         rules: [
             {
                 test: /\.css$/i,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    'css-loader',
-                    'postcss-loader'],
+                    "css-loader",
+                    "postcss-loader",
+                ],
             },
         ],
     },
-}
+};

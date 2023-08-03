@@ -1,15 +1,22 @@
 const { merge } = require('webpack-merge')
 const commonConfiguration = require('./webpack.config')
 const TerserPlugin = require('terser-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = merge([
     commonConfiguration, {
         mode: 'production',
         output: {
+            filename: 'js/main.[contenthash].js',
             environment: {
                 arrowFunction: false,
             },
         },
+        plugins: [
+            new MiniCssExtractPlugin({
+                filename: 'css/[name].[contenthash].css',
+            }),
+        ],
         module: {
             rules: [
                 {

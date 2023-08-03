@@ -7,7 +7,6 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, '../public'),
         clean: true,
-        filename: 'js/main.[contenthash].js',
     },
     resolve: {
         alias: {
@@ -16,9 +15,6 @@ module.exports = {
     },
     plugins: [
         new HTMLWebpackPlugin({ template: 'src/index.html' }),
-        new MiniCssExtractPlugin({
-            filename: 'css/[name].[contenthash].css',
-        }),
     ],
     module: {
         rules: [

@@ -1,9 +1,9 @@
-module.exports = {
+module.exports = (context) => ({
     plugins: {
         tailwindcss: {},
         'postcss-preset-env': {
             browsers: ['>0.3%', 'last 2 version', 'not dead'],
         },
-        cssnano: {},
+        ...(context.env === 'production' ? { cssnano: {} } : {}),
     },
-}
+})

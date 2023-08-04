@@ -6,6 +6,7 @@ module.exports = {
     entry: "./src/js/index.js",
     output: {
         path: path.resolve(__dirname, "../public"),
+        assetModuleFilename: "img/[hash][ext]",
         clean: true,
     },
     resolve: {
@@ -23,6 +24,18 @@ module.exports = {
                     "css-loader",
                     "postcss-loader",
                 ],
+            },
+            {
+                test: /\.html$/i,
+                loader: "html-loader",
+            },
+            {
+                test: /^(?!.*\.inline\.svg$).+\.(png|jpg|gif|svg)$/i,
+                type: "asset/resource",
+            },
+            {
+                test: /\.*\.inline\.svg$/i,
+                type: "asset/inline",
             },
         ],
     },

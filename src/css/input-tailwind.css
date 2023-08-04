@@ -19,6 +19,10 @@
     .content-container {
         max-width: theme('maxWidth.7xl');
         margin: 0 theme('margin.auto');
-        padding: 0 theme('spacing.5');
+        padding: 0 theme('padding.4');
+
+        @media screen(sm) {
+            padding: 0 theme('padding.5');
+        }
     }
 }

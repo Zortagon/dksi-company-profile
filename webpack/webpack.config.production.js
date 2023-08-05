@@ -8,7 +8,7 @@ module.exports = merge([
     {
         mode: "production",
         output: {
-            filename: "js/main.[contenthash].js",
+            filename: "js/[name].[contenthash].js",
             environment: {
                 arrowFunction: false,
             },

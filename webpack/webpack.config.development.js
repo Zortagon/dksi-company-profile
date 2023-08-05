@@ -8,8 +8,9 @@ module.exports = merge([
     {
         mode: "development",
         output: {
-            filename: "js/main.js",
+            filename: "js/[name].js",
         },
+        devtool: false,
         devServer: {
             static: {
                 directory: path.join(__dirname, "public"),

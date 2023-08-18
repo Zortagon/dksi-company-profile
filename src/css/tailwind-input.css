@@ -29,6 +29,14 @@
     font-family: 'Epilogue', sans-serif;
 }
 
+* {
+    --swiper-pagination-color: #0B1F2A;
+}
+
+.swiper {
+    width: 100%;
+}
+
 @layer components {
     .content-container {
         @apply mx-auto max-w-7xl px-5;
@@ -52,5 +60,17 @@
 
     .btn-mono {
         @apply font-mono font-semibold text-accent-gold;
+    }
+
+    .card-corporate {
+        @apply h-fit lg:h-56 relative flex flex-col items-center justify-center gap-8 p-8 transition-opacity bg-gray-100 bg-opacity-50 lg:flex-row rounded-2xl hover:bg-opacity-100;
+    }
+
+    .container-partner-logo {
+        @apply aspect-square flex items-center transition opacity-50 hover:opacity-100 grayscale hover:grayscale-0;
+    }
+
+    .partner-logo {
+        @apply w-32;
     }
 }

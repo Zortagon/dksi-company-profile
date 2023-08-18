@@ -1,90 +1,91 @@
-"use strict";
+
 
 $(document).ready(function () {
-    const navMain = $('#navbar-main');
-    const navItem = $('.nav-link, .btn-contact');
+    const navMain = $('#navbar-main')
+    const navItem = $('.nav-link, .btn-contact')
 
     // Used to lock the scroll on content when navbar expanded
-    function isolateBodyScroll(state) {
+    function isolateBodyScroll (state) {
         if (state) {
-            $('body').addClass('isolate-scroll');
+            $('body').addClass('isolate-scroll')
         } else if (!state) {
-            $('body').removeClass('isolate-scroll');
+            $('body').removeClass('isolate-scroll')
         }
     }
 
     // ========== NAVBAR MENU: Solution =========
-    const navButtonSolution = $('#nav-button-solutions');
-    const navSubMenuSolution = $('#nav-submenu-solutions');
+    const navButtonSolution = $('#nav-button-solutions')
+    const navSubMenuSolution = $('#nav-submenu-solutions')
 
-    function showSolutionMenu(state) {
+    function showSolutionMenu (state) {
         if (state) {
-            navSubMenuSolution.removeClass('hidden');
-            navMenu.removeClass('divide-y-[1px]');
+            navSubMenuSolution.removeClass('hidden')
+            navMenu.removeClass('divide-y-[1px]')
             if ($(window).width() < 1024) {
-                navButtonSolution.addClass('nav-link-dropdown-active');
-                $('.nav-el-page').addClass('hidden');
+                navButtonSolution.addClass('nav-link-dropdown-active')
+                $('.nav-el-page').addClass('hidden')
                 setTimeout(function () {
                     isolateBodyScroll(true)
-                }, 100);
+                }, 100)
             }
-            $('.arrow-down-solutions').addClass('arrow-down-active');
+            $('.arrow-down-solutions').addClass('arrow-down-active')
         } else if (!state) {
-            navSubMenuSolution.addClass('hidden');
-            navButtonSolution.removeClass('nav-link-dropdown-active');
-            navMenu.addClass('divide-y-[1px]');
-            $('.nav-el-page').removeClass('hidden');
-            $('.arrow-down-solutions').removeClass('arrow-down-active');
-            isolateBodyScroll(false);
+            navSubMenuSolution.addClass('hidden')
+            navButtonSolution.removeClass('nav-link-dropdown-active')
+            navMenu.addClass('divide-y-[1px]')
+            $('.nav-el-page').removeClass('hidden')
+            $('.arrow-down-solutions').removeClass('arrow-down-active')
+            isolateBodyScroll(false)
         }
     }
 
-    function isSolutionMenuShowed() {
-        return !navSubMenuSolution.hasClass('hidden');
+    function isSolutionMenuShowed () {
+        return !navSubMenuSolution.hasClass('hidden')
     }
 
     navButtonSolution.on('click', function () {
         showSolutionMenu(!isSolutionMenuShowed())
-    });
+    })
 
     // ========== NAVBAR ==========
-    const navMenu = $('#navbar-menu');
+    const navMenu = $('#navbar-menu')
 
-    function isNavBarExpanded() {
-        return !navMenu.hasClass('hidden');
+    function isNavBarExpanded () {
+        return !navMenu.hasClass('hidden')
     }
 
-    function showExpandNavBar(state) {
+    function showExpandNavBar (state) {
         if (state) {
-            navMenu.removeClass('hidden');
+            navMenu.removeClass('hidden')
         } else if (!state) {
-            navMenu.addClass('hidden');
+            navMenu.addClass('hidden')
             showSolutionMenu(false)
         }
     }
 
     $('#menu-button').on('click', function (e) {
-        showExpandNavBar(!isNavBarExpanded());
-    });
+        showExpandNavBar(!isNavBarExpanded())
+    })
 
     $('main, a').on('click', function () {
-        showExpandNavBar(false);
-    });
+        showExpandNavBar(false)
+    })
 
     $(window).on('resize', function () {
-        let width = $(window).width();
+        let width = $(window).width()
         if (isSolutionMenuShowed()) {
             if (width < 1024) {
-                showExpandNavBar(true);
+                showExpandNavBar(true)
                 showSolutionMenu(true)
-                isolateBodyScroll(true);
+                isolateBodyScroll(true)
             } else {
-                $('.nav-el-page').removeClass('hidden');
-                isolateBodyScroll(false);
-                if (isSolutionMenuShowed()) navButtonSolution.removeClass('nav-link-dropdown-active');
+                $('.nav-el-page').removeClass('hidden')
+                isolateBodyScroll(false)
+                if (isSolutionMenuShowed()) navButtonSolution.removeClass(
+                    'nav-link-dropdown-active')
             }
         }
-    });
+    })
 
     // $("main").on('touchmove scroll', function (e) {
     //     if ($("body").hasClass('isolate-scroll')) {
@@ -124,6 +125,6 @@ $(document).ready(function () {
     // });
 
     $('#debug-button').on('click', function () {
-        expandNavBar(true);
-    });
-});
+        expandNavBar(true)
+    })
+})

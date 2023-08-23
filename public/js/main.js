@@ -1,4 +1,21 @@
-
+let swiper = new Swiper('.swiper-partners', {
+    loop: true,
+    spaceBetween: 75,
+    pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
+    breakpoints: {
+        640: {
+            spaceBetween: 0,
+        },
+    },
+})
 
 $(document).ready(function () {
     const navMain = $('#navbar-main')
@@ -86,44 +103,6 @@ $(document).ready(function () {
             }
         }
     })
-
-    // $("main").on('touchmove scroll', function (e) {
-    //     if ($("body").hasClass('isolate-scroll')) {
-    //         showSolutionMenu(false);
-    //     }
-    // });
-
-    // $('body').addClass('expanded-header');
-
-    // function closeNavBar() {
-    //     navMenu.addClass('hidden');
-    //     navSubMenuSolution.addClass('hidden');
-    //     $('.arrow-down-solutions').removeClass('arrow-down-active');
-    //     $('.nav-el-page').removeClass('hidden');
-    // }
-    //
-    // $('#menu-button').on('click', function (e) {
-    //     e.stopPropagation();
-    //     $('#navbar-menu').toggleClass('hidden');
-    // });
-    //
-    // navMain.on('click', function (e) {
-    //     e.stopPropagation();
-    // });
-    // navMenu.on('click', function (e) {
-    //     e.stopPropagation();
-    // });
-    // navItem.on('click', closeNavBar)
-    //
-    // // Hide navbar sub-menu on click outside.
-    // $(this).on('click', closeNavBar);
-    //
-    // $(window).on('resize', function () {
-    //     if ($(window).width() >= 1024) {
-    //         $('.nav-el-page').removeClass('hidden');
-    //     }
-    // });
-
     $('#debug-button').on('click', function () {
         expandNavBar(true)
     })

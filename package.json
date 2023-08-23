@@ -4,7 +4,8 @@
     "description": "Experimental development DKSI Company Profile",
     "main": "index.js",
     "scripts": {
-        "dev-build": "tailwind -i src/css/tailwind-input.css -o public/css/main.css --watch"
+        "dev-build": "tailwind -i src/css/tailwind-input.css -o public/css/main.css --watch",
+        "build": "tailwind -i src/css/tailwind-input.css -o public/css/main.css --minify"
     },
     "author": "Aldian Fernanda",
     "license": "ISC",
